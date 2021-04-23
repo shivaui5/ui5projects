@@ -1,0 +1,17 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.ui.layout.form"
+	controllerName="cinarios_1myCinarios.controller.view1" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Welcome View 1">
+		<content>
+			<f:SimpleForm>
+				<!--				<ComboBox change = "onSelect" items="{/list}">
+					<core:Item  key="view2" text="{name}"/>
+				</ComboBox>-->
+				<HBox>
+					<Select change="onChange" items="{/list}">
+						<core:Item key="view1" text="{name}"/>
+					</Select>
+				</HBox>
+			</f:SimpleForm>
+		</content>
+	</Page>
+</mvc:View>
